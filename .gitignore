@@ -1,0 +1,8 @@
+Project_01_key
+
+.terraform/*
+.tfstate*
+.tfstate
+.backup
+.terraform.lock.hcl*
+.pem
