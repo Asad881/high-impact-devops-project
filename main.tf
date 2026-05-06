@@ -8,4 +8,5 @@ resource "aws_instance" "Project01_Server" {
   user_data = templatefile("${path.module}/setup.sh", {
     image_tag = var.image_tag
   })
+  user_data_replace_on_change = true
 }

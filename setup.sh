@@ -15,6 +15,7 @@ sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin d
 sudo groupadd docker
 sudo usermod -aG docker $USER
 
-docker pull shiekh664/portfolio-app:${image_tag}
 
-docker run -d -p 80:80 shiekh664/portfolio-app:${image_tag}
+sudo docker pull shiekh664/portfolio-app:${image_tag}
+
+sudo docker run -d -p 80:80 shiekh664/portfolio-app:${image_tag}
